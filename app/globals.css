@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1a1a1a;
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --accent: #22c55e;
+  --accent-hover: #16a34a;
+  --border: #27272a;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Textarea and input styling */
+textarea, input[type="text"] {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Code blocks */
+.code-output {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Button hover effects */
+.btn-primary {
+  @apply bg-brand-500 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200;
+}
+
+.btn-primary:hover {
+  @apply bg-brand-600 transform scale-[1.02];
+}
+
+.btn-secondary {
+  @apply bg-zinc-800 text-white font-medium px-4 py-2 rounded-lg border border-zinc-700 transition-all duration-200;
+}
+
+.btn-secondary:hover {
+  @apply bg-zinc-700 border-zinc-600;
+}
+
+/* Tool card styling */
+.tool-card {
+  @apply bg-zinc-900 border border-zinc-800 rounded-xl p-6 transition-all duration-300;
+}
+
+.tool-card:hover {
+  @apply border-brand-500/50 bg-zinc-900/80 transform -translate-y-1;
+  box-shadow: 0 10px 40px -10px rgba(34, 197, 94, 0.15);
+}
+
+/* Ad placeholder styling */
+.ad-slot {
+  @apply bg-zinc-900/50 border border-dashed border-zinc-700 rounded-lg flex items-center justify-center text-zinc-600 text-sm;
+  min-height: 90px;
+}
