@@ -15,19 +15,24 @@ export default function Header() {
           </Link>
           
           <nav className="hidden sm:flex items-center gap-6">
-            <Link 
-              href="/json-formatter" 
+            <Link
+              href="/json-formatter"
               className="text-zinc-400 hover:text-white transition-colors text-sm"
             >
               JSON
             </Link>
-            <Link 
-              href="/base64-encoder" 
+            <Link
+              href="/base64-encoder"
               className="text-zinc-400 hover:text-white transition-colors text-sm"
             >
               Base64
             </Link>
-            {/* Add more tool links here as you build them */}
+            <Link
+              href="/uuid-generator"
+              className="text-zinc-400 hover:text-white transition-colors text-sm"
+            >
+              UUID
+            </Link>
           </nav>
           
           <a 

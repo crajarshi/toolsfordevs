@@ -22,19 +22,16 @@ const tools = [
       </svg>
     ),
   },
-  // Add more tools here as you build them:
-  // {
-  //   title: 'Timestamp Converter',
-  //   description: 'Convert Unix timestamps to human-readable dates and vice versa.',
-  //   href: '/timestamp-converter',
-  //   icon: <ClockIcon />,
-  // },
-  // {
-  //   title: 'UUID Generator',
-  //   description: 'Generate random UUIDs (v4) for your applications.',
-  //   href: '/uuid-generator',
-  //   icon: <KeyIcon />,
-  // },
+  {
+    title: 'UUID Generator',
+    description: 'Generate random UUID v4 or timestamp-based UUID v1. Create single or bulk UUIDs instantly.',
+    href: '/uuid-generator',
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+      </svg>
+    ),
+  },
 ]
 
 export default function HomePage() {

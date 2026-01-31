@@ -34,7 +34,11 @@ export default function Footer() {
                   Base64 Encoder
                 </Link>
               </li>
-              {/* Add more tools here */}
+              <li>
+                <Link href="/uuid-generator" className="text-zinc-400 hover:text-brand-400 transition-colors">
+                  UUID Generator
+                </Link>
+              </li>
             </ul>
           </div>
           
